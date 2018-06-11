@@ -51,7 +51,7 @@ url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif, etc.)
 - Remove files with passwords in SYSVOL [(including GPP)](https://adsecurity.org/?p=2288).
 - Ensure admins don’t log onto untrusted systems (regular workstations) by configuring **DENY** user right assignments with GPOs.
 - Provide Privileged Access Workstations or [PAWs](https://technet.microsoft.com/en-us/windows-server-docs/security/securing-privileged-access/privileged-access-workstations) for all highly privileged work. Those should never have access to the Internet.
-- Use Managed Service Accounts for SAs when possible [(FGPP)](https://technet.microsoft.com/en-us/library/cc770842%28v=ws.10%29.aspx)
+- Use Managed Service Accounts for SAs when possible [(gMSA)](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
 - For systems that do not support Managed Service Accounts, deploy a [Fine-Grained Password Policy](https://technet.microsoft.com/en-us/library/cc770842(v=ws.10).aspx) to ensure the passwords are >32 characters.
 - Ensure all computers are talking NTLMv2 & Kerberos, deny [LM/NTLMv1](https://support.microsoft.com/en-us/help/2793313/security-guidance-for-ntlmv1-and-lm-network-authentication).
 
